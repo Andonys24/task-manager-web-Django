@@ -8,8 +8,8 @@
 <div class="cuerpo-tajeta">
     <form method="post" action>
         {% csrf_token %}
-        <p>Vas a eliminar esta tarea: "{{tarea}}"</p>
-        <input class="button" type="submit" value="Eliminar">
+        <p class="message no-margin">Vas a eliminar esta tarea: "{{tarea}}"</p>
+        <input class="button margin-10" type="submit" value="Eliminar">
     </form>
 </div>
 

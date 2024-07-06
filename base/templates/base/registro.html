@@ -1,7 +1,7 @@
 {% extends 'base/principal.html' %}
 {% block content %}
 
-<div class="barra-superior">
+<div class="barra-superior barra-login">
     <h1>Registrate</h1>
 </div>
 <div class="cuerpo-tarjeta">
@@ -16,7 +16,7 @@
         <label for="">{{form.password2.label}}</label>
         {{form.password2}}
 
-        <input style="margin-top: 10px;" class="button" type="submit" value="Registra">
+        <input class="button no-margin btn-registro" type="submit" value="Registra">
     </form>
     <p>Ya tienes una cuenta?? <a href="{% url 'login' %}">Ingresar</a></p>
 </div>
